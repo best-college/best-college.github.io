@@ -517,7 +517,7 @@ Discover the degrees that are close to your sphere of interest, and that will pa
 	<footer class="footer-area section_gap">
 		<div class="container">
 			<div class="row footer-bottom d-flex justify-content-between">
-				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2018 All rights reserved | Made with <i class="fas fa-heart" aria-hidden="true"></i> by R&amp;D team</a></p>
+				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2018 All rights reserved | Made with <i class="fas fa-heart" aria-hidden="true"></i> by R&amp;D team</p>
 				<div class="col-lg-4 col-sm-12 footer-social">
 					<a href="#"><i class="fab fa-facebook"></i></a>
 					<a href="#"><i class="fab fa-twitter"></i></a>
@@ -541,18 +541,6 @@ Discover the degrees that are close to your sphere of interest, and that will pa
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="vendors/counter-up/jquery.counterup.js"></script>
 	<script src="js/mail-script.js"></script>
-    
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxn8VgOoy7uYubU89mSb0OVpfC0fCCfrEh0WDZjHCSz8MKciwk/exec'
-      const form = document.forms['submit-to-google-sheet']
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
     
 </body>
 
