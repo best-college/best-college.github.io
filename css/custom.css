@@ -3,3 +3,9 @@
     display: none;
     color: red;
 }
+
+.centerform
+{
+    text-align:center;
+    display:inline-block;
+}
