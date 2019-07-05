@@ -126,67 +126,39 @@
 		</div>
 	</header>
 	<!--================ End Header Menu Area =================-->
-
-
-    
-    <!-- submission form-->
-    
-        <div class="container">
-<div class="">
-        <form name="submit-to-google-sheet" class="well form-horizontal"  id="contact_form">
-    <fieldset>
-
-    <!-- Form Name -->
-    <legend><center><h2 class="text-center"><b>Step 1: Personal information</b></h2></center></legend><br>
-        
-    <div class="form-group col-md-4 offset-md-4"> 
-      <label class="col-md-4 control-label">Name</label>
-        <div class="col-md-4 selectContainer">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                <input name="name" type="text" required>
+    <section id="cover">
+        <div id="cover-caption">
+            <div id="container" class="container">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3 text-center">
+                        <h1 class="display-4">Step 1: Personal information</h1>
+                        <div class="info-form">
+                            <form class="form-inlin justify-content-center well form-horizontal" name="submit-to-google-sheet" id="contact_form">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input class="form-control" placeholder="Jane Doe" name="name" type="text" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input name="email" type="email" class="form-control" placeholder="jane.doe@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>I am:</label>
+                                    <select name="stu-par" class="form-control selectpicker" required> 
+                                        <option value="">Select</option>
+                                        <option>Student</option>
+                                        <option>Parent</option>
+                                    </select>
+                                </div>
+                                <button onclick="amplitude.getInstance().logEvent('submit-form-1');" type="submit" class="btn btn-warning" >SUBMIT <span class="glyphicon glyphicon-send"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-        
-    <div class="form-group col-md-4 offset-md-4"> 
-      <label class="col-md-4 control-label">Email</label>
-        <div class="col-md-4 selectContainer">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                <input name="email" type="email" required>
-            </div>
-        </div>
-    </div>
-
-    <div class="form-group col-md-4 offset-md-4"> 
-      <label class="col-md-4 control-label">I am:</label>
-        <div class="col-md-4 selectContainer">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                <select name="stu-par" class="form-control selectpicker" required> 
-                    <option value="">Select</option>
-                    <option>Student</option>
-                    <option>Parent</option>
-                </select>
-            </div>
-        </div>
-    </div>
-
-    <!-- Button -->
-    <div class="form-group col-md-4 offset-md-4">
-      <label class="col-md-4 control-label"></label>
-      <div class="col-md-4"><br>
-        <button onclick="amplitude.getInstance().logEvent('submit-form-1');" type="submit" class="btn btn-warning" >SUBMIT <span class="glyphicon glyphicon-send"></span></button>
-      </div>
-    </div>
-
-    </fieldset>
-    </form>
-    </div>
-    </div>
-
-    <!-- /.container -->
+        <br>
+    </section>
     
     
     <!-- end of submission form-->
