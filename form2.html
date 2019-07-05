@@ -467,7 +467,7 @@
     <div class="form-group">
       <label class="col-md-4 control-label"></label>
       <div class="col-md-4"><br>
-        <button onclick="window.location.href = 'payment/'; amplitude.getInstance().logEvent('submit-form-2');onFormSubmit();" type="submit" class="btn btn-warning" >SUBMIT <span class="glyphicon glyphicon-send"></span></button>
+        <button onclick="amplitude.getInstance().logEvent('submit-form-2');" type="submit" class="btn btn-warning" >SUBMIT <span class="glyphicon glyphicon-send"></span></button>
       </div>
     </div>
 
@@ -519,7 +519,7 @@
       form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
+          .then(response => {console.log('Success!', response); window.location.href = 'payment/';})
           .catch(error => console.error('Error!', error.message))
       })
     </script>
@@ -537,17 +537,6 @@
             };
     </script>
     -->
-    
-    <script>
-        function onFormSubmit(){
-        $('required').each(function(){
-        if ( $(this).val() == "" ) {
-          greeting = "Good day";
-        } else {
-          greeting = "Good evening";
-        }});
-    
-    </script>
     
 </body>
 
