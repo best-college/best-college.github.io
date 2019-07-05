@@ -9,7 +9,7 @@
     
 	<title>BestCollege.io</title>
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
 	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
@@ -176,7 +176,7 @@
     <div class="form-group">
       <label class="col-md-4 control-label"></label>
       <div class="col-md-4"><br>
-        <button onclick="window.location.href = 'form2.html'; amplitude.getInstance().logEvent('submit-form-1');" type="submit" class="btn btn-warning" >SUBMIT <span class="glyphicon glyphicon-send"></span></button>
+        <button onclick="amplitude.getInstance().logEvent('submit-form-1');" type="submit" class="btn btn-warning" >SUBMIT <span class="glyphicon glyphicon-send"></span></button>
       </div>
     </div>
 
@@ -228,7 +228,7 @@
       form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {console.log('Success!', response); window.location.href = 'payment/';})
+          .then(response => {console.log('Success!', response); window.location.href = 'form2.html';})
           .catch(error => console.error('Error!', error.message))
       })
     </script>
