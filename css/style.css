@@ -605,7 +605,8 @@ button:focus {
 /* Start Features Area css
 ============================================================================================ */
 .feature_area {
-  margin-top: -37em; }
+  margin-top: -45em;
+margin-bottom: 13em;}
   @media (max-width: 991px) {
     .feature_area {
       margin-top: 60px; } }
